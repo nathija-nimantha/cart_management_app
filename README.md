@@ -1,16 +1,88 @@
-# grocery_management
 
-A new Flutter project.
+# Grocery Management System
 
-## Getting Started
+A functional **Grocery Management System** built with **Flutter** and **Dart**, featuring item management, a cart system, discount calculations, order tracking, and refund functionality.
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### 1. **Item Management**
+- View all available grocery items with:
+    - **Name**
+    - **Price**
+    - **Stock**
+    - **Discount**
+- Add items to the cart, with discounts automatically applied to the prices.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 2. **Cart Management**
+- Manage items in your cart:
+    - **Increase or Decrease Quantities**
+    - **Remove Items**
+    - **Clear Cart**
+- Displays a detailed price breakdown:
+    - **Subtotal**
+    - **Total Discount**
+    - **Net Total**
+- **Checkout Functionality**:
+    - Validates stock availability.
+    - Deducts stock upon successful checkout.
+    - Saves the order to the order history.
+
+### 3. **Order Management**
+- View completed orders, including:
+    - Unique **Order ID** formatted as `yyyyMMddHHmm`.
+    - **Subtotal**, **Total Discount**, and **Net Total**.
+    - **Order Date and Time**.
+- Expandable order details showing all items in the order.
+- **Refund Functionality**:
+    - Mark orders as refunded.
+    - Display the refund status in the order details.
+
+---
+
+## Installation
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-username/grocery-management-system.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd grocery-management-system
+   ```
+3. Install dependencies:
+   ```bash
+   flutter pub get
+   ```
+4. Run the project:
+   ```bash
+   flutter run
+   ```
+
+---
+
+## Screenshots
+
+### Item Screen:
+![Item Screen](lib/assets/screenshots/item_screen.png)
+- Displays all items with their prices, stock, and discounts.
+
+### Cart Screen:
+![Item Screen](lib/assets/screenshots/cart_screen.png)
+- Allows users to manage their cart and view a detailed price breakdown.
+
+### Order Screen:
+![Item Screen](lib/assets/screenshots/order_screen.png)****
+- Tracks order history and provides expandable views of item details.
+
+---
+
+## Contribution
+
+Contributions are welcome! Feel free to:
+- Fork this repository.
+- Submit pull requests with new features or bug fixes.
+- Open issues for suggestions or bug reports.
+
+---
